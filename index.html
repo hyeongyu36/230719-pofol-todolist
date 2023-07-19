@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+    <script src="script.js" defer></script>
+    <style type="text/css">* {cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat985.cur), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2011/12/29/tiny-bunny.html" target="_blank" title="Tiny Bunny"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Tiny Bunny" style="position:absolute; top: 0px; right: 0px;" /></a>
+    <title>todolist</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header> <h2>To Do List</h2> 
+      <div class="inputField">
+        <input
+          type="text"
+          id="addValue"
+          placeholder="할일 추가하기"
+          autofocus
+        />
+        <button type="button" id="btn" onclick="addTodo()">
+          <i class="xi-plus xi-2x"></i>
+        </button>
+      </div>
+    </header>
+      <div class="todolistbox">
+        <ul id="addTodo" class="todolist">
+          <li><div id="result"></div></li>
+        </ul>
+      </div>
+      <div class="footer">
+        <button type="button" id="allClear" onclick="allClearList()">모두 삭제</button>
+      </div>
+    </div>
+  </body>
+</html>

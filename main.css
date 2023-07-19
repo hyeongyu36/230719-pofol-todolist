@@ -1,0 +1,158 @@
+@charset "utf-8";
+@font-face {
+  font-family: "Hahmlet-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Hahmlet-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.todolistbox::-webkit-scrollbar {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.todolistbox::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.todolistbox::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
+}
+/* .todolistbox::-webkit-scrollbar-button:start:decrement, ::-webkit-scrollbar-button:end:increment{
+    width: 5px;
+    background-color: rgb(95, 95, 124);
+} */
+
+.wrapper {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 500px;
+  height: 800px;
+  background-image: url("images/sea.jpg");
+  /* filter: brightness(1.3); */
+  object-fit: cover;
+  display: block;
+}
+header {
+  height: 25%;
+  width: 100%;
+  display: block;
+  background: linear-gradient(0deg, transparent 20%, rgba(0, 0, 0, 0.5));
+}
+header h2 {
+  display: block;
+  text-align: center;
+  padding: 20px;
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+  text-shadow: 1px 1px 4px black;
+  /* background-color: rgba(0, 0, 0, 0.4); */
+
+  display: block;
+  font-family: "Hahmlet-Regular";
+}
+.inputField {
+  /* background-color: rgba(0, 0, 0, 0.2); */
+
+  /* height: 10%; */
+  text-align: center;
+  padding: 20px 0;
+  display: block;
+}
+
+#addValue {
+  height: 25px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  font-family: "Pretendard-Regular";
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+#btn {
+  height: 25px;
+  position: relative;
+  top: 3px;
+  padding: 3px 0;
+  border-radius: 3px;
+  background-color: rgb(103, 138, 150);
+  border: none;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.5s;
+}
+#btn:hover {
+  background-color: rgb(70, 102, 112);
+}
+#btn i {
+  height: 20px;
+  width: 30px;
+  color: #fff;
+  font-size: 20px;
+}
+.todolistbox {
+  height: 65%;
+  width: 90%;
+  /* border: 1px solid rgba(255,255,255,0.3); */
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+  overflow: scroll;
+  overflow-x: auto;
+  overflow-y: auto;
+  font-family: "Pretendard-Regular";
+  /* background-color: #dadada; */
+}
+ul,
+li {
+  list-style: none;
+}
+ul {
+  padding: 20px;
+  display: block;
+  width: 100%;
+  /* background-color: black; */
+}
+
+/* #addTodo li #result li::before{
+    content: "";
+
+} */
+#addTodo li #result li {
+  display: flex;
+  width: 100%;
+  padding: 3px 20px;
+  /* background-color: aquamarine; */
+  justify-content: space-between;
+}
+#addTodo li #result li:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.footer {
+  display: block;
+  position: relative;
+  float: right;
+}
+#allClear {
+  padding: 5px 10px;
+  font-size: 15px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  margin-right: 30px;
+  margin-top: 30px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: rgb(248, 248, 248);
+}
